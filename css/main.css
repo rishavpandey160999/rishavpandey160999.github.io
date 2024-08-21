@@ -1710,6 +1710,17 @@ input::-moz-focus-inner {
   color: #ffffff;
 }
 
+/* Adjust the height of the Navbar */
+.s-header {
+    height: auto; /* Allow the Navbar to expand based on content */
+}
+
+/* Prevent items from hiding when scrolling */
+.header-nav-wrap {
+    overflow-y: visible; /* Ensure the items are always visible */
+}
+
+
 /* ------------------------------------------------------------------- 
  * ## menu trigger
  * ------------------------------------------------------------------- */
