@@ -3289,6 +3289,24 @@ input::-moz-focus-inner {
   background-color: #050505;
 }
 
+.contact_dubna_image {
+  position: relative; /* Needed for absolute positioning */
+  text-align: left;
+  color: white;
+}
+
+.contact-image {
+  margin-top: -50px; /* Moves image up */
+  position: absolute;
+  right: 20px; /* Adjust this for alignment */
+  transform: translateY(-50%); /* Centers vertically */
+  width: 416px; /* Adjust size as needed */
+  height: 416px;
+  border-radius: 50%;
+  border: 3px solid black; /* Optional border */
+}
+
+
 .contact-main a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   display: inline-block;
