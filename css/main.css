@@ -2023,6 +2023,26 @@ input::-moz-focus-inner {
   background-color: #cf1767;
 }
 
+.typewriter {
+  font-family: 'Courier New', Courier, monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #cf1767; /* blinking cursor */
+  animation: blink-caret 0.75s step-end infinite;
+  font-size: 2.5rem; /* adjust as needed */
+  color: #cf1767;
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #cf1767;
+  }
+}
+
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * intro

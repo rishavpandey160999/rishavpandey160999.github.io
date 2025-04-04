@@ -84,13 +84,13 @@
 
             <div class="column large-9 mob-full intro-text">
                 <!-- <h3 style="color:white">Website updated on Sep 25, 2023</h3> --> 
-                <h3><strong>Hello, this is Rishav Pandey</strong></h3> 
+                <h3><strong><span class="typewriter" id="typing"></span></strong></h3> 
                 <h3 style="color:white">
                     I'm a physicist and engineer, <br> 
                     currently enrolled as a graduate student (M.Tech.) <br>  
                     @ the Indian Institute of Technology Delhi, India <br>
                   <br>
-                  <strong style="color: rgba(255, 20, 130, 0.893);">Areas of interest:</strong>
+                  <strong style="color: #cf1767;">Areas of interest:</strong>
                   <div style="margin-top: 15px;"></div>
                     <ul>
                        <li>High Energy Physics</li> 
@@ -934,4 +934,27 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
+    <script>
+        const text = "Hello, this is Rishav Pandey";
+        const typingElement = document.getElementById("typing");
+        let index = 0;
+      
+        function typeWriter() {
+          if (index < text.length) {
+            typingElement.textContent += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 100); // Typing speed
+          } else {
+            // Pause before restarting
+            setTimeout(() => {
+              typingElement.textContent = ""; // Clear text
+              index = 0;
+              typeWriter(); // Restart typing
+            }, 2000); // Delay before restarting (in milliseconds)
+          }
+        }
+      
+        window.onload = typeWriter;
+      </script>
+      
 </body>
